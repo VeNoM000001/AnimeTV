@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./AllAnime.scss";
 import { useDispatch } from "react-redux";
 import { listReducer } from "../../redux/yourList/ListSlice";
