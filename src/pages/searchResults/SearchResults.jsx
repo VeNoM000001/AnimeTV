@@ -23,7 +23,7 @@ const SearchResults = () => {
       dispatch(loadingReducer(false));
     };
     fetchSearchData();
-  }, [animeName]);
+  }, [animeName,dispatch]);
 
   return (
     <section className="search-section">
