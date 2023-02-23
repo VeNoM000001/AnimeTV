@@ -1,0 +1,43 @@
+@import "../../colors";
+section {
+  > button {
+    &:hover {
+      opacity: 0.9;
+    }
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    z-index: 1;
+    transform: translate(10rem, -22rem);
+    border: none;
+    opacity: 0.7;
+    cursor: pointer;
+    font-size: 2rem;
+    color: $red;
+  }
+
+  > img {
+    width: 25rem;
+    border-radius: 1rem;
+  }
+  display: flex;
+  flex-direction: column;
+  > p,
+  h2 {
+    transform: translate(0, -3rem);
+    color: $red;
+  }
+}
+@media screen and (max-width: 424px) {
+  section {
+    > button {
+      transform: translate(7.5rem, -17rem);
+    }
+    > img {
+      &:hover {
+        transform: none;
+      }
+      width: 20rem;
+    }
+  }
+}

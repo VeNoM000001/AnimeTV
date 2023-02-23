@@ -1,0 +1,53 @@
+@import "../../colors";
+nav {
+  z-index: 2;
+  position: fixed;
+  background-color: $dark;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  > img {
+    background-color: $dark;
+    width: 5%;
+    height: 5%;
+  }
+  > a {
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+  }
+}
+.links {
+  display: flex;
+  margin-left: 38rem;
+  gap: 6rem;
+}
+a {
+  font-family: "Dancing Script", cursive;
+  text-decoration: none;
+  color: $red;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 424px) {
+  nav {
+    gap: 0.1rem;
+    width: 24.6rem;
+    height: 5rem;
+    > a {
+      font-size: 1.1rem;
+    }
+    > img {
+      width: 80%;
+      height: 80%;
+    }
+  }
+  .links {
+    margin-left: 3rem;
+    gap: 0.5rem;
+    margin-right: 2rem;
+  }
+  a {
+    font-size: 0.9rem;
+  }
+}

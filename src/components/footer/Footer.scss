@@ -1,0 +1,11 @@
+@import "../../colors";
+footer {
+  height: 5rem;
+  background-color: $dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > h1 {
+    color: $red;
+  }
+}

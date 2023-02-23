@@ -1,0 +1,54 @@
+@import "../../colors.scss";
+form {
+  display: flex;
+  > div > input {
+    background-color: transparent;
+    font-size: 4.5rem;
+    border-radius: 4rem;
+    border-color: $darker;
+    text-indent: 3rem;
+    transform: translate(-3rem, 0);
+  }
+}
+::placeholder {
+  position: absolute;
+  padding-top: 0.6rem;
+  color: $darker;
+  font-size: 3rem;
+}
+.search-icon {
+  width: 3rem;
+  font-size: 5rem;
+  color: $offWhite;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  // transform: translate(73rem, -6.5rem);
+  cursor: pointer;
+}
+@media screen and (max-width: 424px) {
+  form {
+    > div {
+      > input {
+        outline: none;
+        font-size: 2rem;
+        color: $offWhite;
+        width: 16rem;
+        height: 3rem;
+        margin-left: 3rem;
+        text-indent: 1rem;
+        transform: translate(-1.5rem, -2rem);
+        border-color: $offWhite;
+      }
+    }
+  }
+  ::placeholder {
+    color: $offWhite;
+    font-size: 1.5rem;
+    padding-top: 0.3rem;
+  }
+  .search-icon {
+    font-size: 2rem;
+    transform: translate(-1rem, -1.5rem);
+  }
+}

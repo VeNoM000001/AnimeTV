@@ -1,0 +1,52 @@
+@import "../../colors.scss";
+.list-section {
+  align-items: center;
+  .list-header {
+    font-size: 5rem;
+    color: $offWhite;
+    font-weight: bolder;
+    font-family: "Dancing Script", cursive;
+    margin-top: 8rem;
+  }
+  &::before {
+    content: "";
+    background-image: url("../../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100rem;
+    background-position: top;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+}
+.yourlist {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 5rem;
+  padding-left: 4rem;
+  > img {
+    width: 25rem;
+    border-radius: 1rem;
+  }
+  > section {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+@media screen and (max-width: 424px) {
+  section {
+  }
+  .list-section {
+    &::before {
+      width: 24.6rem;
+    }
+  }
+  .yourlist {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+  }
+}

@@ -1,0 +1,63 @@
+@import "../../colors";
+section {
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+  width: 100%;
+  margin: 0;
+  // height: 100vh;
+  // background-color: $darker;
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    align-items: center;
+    > h1 {
+      font-size: 5rem;
+      color: $offWhite;
+      font-weight: bolder;
+      font-family: "Dancing Script", cursive;
+      margin-top: 8rem;
+    }
+  }
+}
+.anime-popular {
+  margin-left: 4rem;
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+}
+.trending-section {
+  &::before {
+    content: "";
+    background-image: url("../../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100rem;
+    background-position: top;
+    position: fixed;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 424px) {
+  section {
+    > div {
+      > h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+  .trending-section {
+    &::before {
+      width: 24.6rem;
+    }
+  }
+  .anime-popular {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+  }
+}
