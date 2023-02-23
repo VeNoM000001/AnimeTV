@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import "./Search.scss";
 import { FaSearch } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
